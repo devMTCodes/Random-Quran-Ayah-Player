@@ -1,11 +1,46 @@
+/* ROBOT.GIF from Giphy - https://giphy.com/gifs/robot-cinema-4d-eyedesyn-3o7abtn7DuREEpsyWY */
+
 html {
   box-sizing: border-box;
-  /* Prevents Padding from adding Extra Width or Height to the Page */
 }
 
 body {
   margin: 0;
-  min-height: 100vh;
-  /* vh Stands for ViewPort Height (Height of Entire Window that your in)
-  Always Streth Background the Entire Height of the Screen EVENIF the content isnt enough to take up the full height of the screen */
+  background: url(./quranverse.webp);
+  position: absolute; /* Positioning the image absolutely */
+  top: 50%; /* Move the image down 50% */
+  left: 50%; /* Move the image right 50% */
+  transform: translate(-50%, -50%); /* Offset the image by its own width and height */
+  max-width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  color: white;
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  width: 200px;
+  height: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  color: white;
+  background: #111110;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Query: Tablet or Smaller*/
+@media screen and (max-width: 1000px) {
+  .container {
+    background-size: cover;
+    background-position: center center;
+  }
+
+  button {
+    box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5);
+  }
 }
